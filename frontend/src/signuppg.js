@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/loginpg.css'
 
-function Login() {
+function Signup() {
     return (
         <div className="div0">
             <div className="div2">
@@ -22,11 +22,12 @@ function Login() {
                     <input type="password" className="inp4" placeholder="enter Password"></input>
                 </span>
                 <div className="div3">
-                    <button className="but1">LOGIN</button>
+                    <button className="but1">SIGN-UP</button>
                     <a className="a1" href="http://www.google.com">sign in with google</a>
                 </div>
             </div>
         </div>
     )
 }
-export default Login;
+
+export default Signup;

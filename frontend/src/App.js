@@ -1,10 +1,13 @@
 import './css/App.css';
-import Login from "./loginpg"
+import React from 'react'
+import Checksign from './chk_sign'
+
+
 
 function App() {
   return (
     <div className="App">
-      <Login/>
+      <Checksign/>
     </div>
   );
 }
