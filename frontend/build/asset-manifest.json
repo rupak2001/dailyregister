@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dailyregister/static/css/main.bfed5036.chunk.css",
-    "main.js": "/dailyregister/static/js/main.d911a962.chunk.js",
-    "main.js.map": "/dailyregister/static/js/main.d911a962.chunk.js.map",
-    "runtime-main.js": "/dailyregister/static/js/runtime-main.d98a04cb.js",
-    "runtime-main.js.map": "/dailyregister/static/js/runtime-main.d98a04cb.js.map",
-    "static/js/2.33779fba.chunk.js": "/dailyregister/static/js/2.33779fba.chunk.js",
-    "static/js/2.33779fba.chunk.js.map": "/dailyregister/static/js/2.33779fba.chunk.js.map",
-    "index.html": "/dailyregister/index.html",
-    "static/css/main.bfed5036.chunk.css.map": "/dailyregister/static/css/main.bfed5036.chunk.css.map",
-    "static/js/2.33779fba.chunk.js.LICENSE.txt": "/dailyregister/static/js/2.33779fba.chunk.js.LICENSE.txt"
+    "main.css": "/dailyregister/frontend/static/css/main.bfed5036.chunk.css",
+    "main.js": "/dailyregister/frontend/static/js/main.d911a962.chunk.js",
+    "main.js.map": "/dailyregister/frontend/static/js/main.d911a962.chunk.js.map",
+    "runtime-main.js": "/dailyregister/frontend/static/js/runtime-main.841c1cc1.js",
+    "runtime-main.js.map": "/dailyregister/frontend/static/js/runtime-main.841c1cc1.js.map",
+    "static/js/2.33779fba.chunk.js": "/dailyregister/frontend/static/js/2.33779fba.chunk.js",
+    "static/js/2.33779fba.chunk.js.map": "/dailyregister/frontend/static/js/2.33779fba.chunk.js.map",
+    "index.html": "/dailyregister/frontend/index.html",
+    "static/css/main.bfed5036.chunk.css.map": "/dailyregister/frontend/static/css/main.bfed5036.chunk.css.map",
+    "static/js/2.33779fba.chunk.js.LICENSE.txt": "/dailyregister/frontend/static/js/2.33779fba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d98a04cb.js",
+    "static/js/runtime-main.841c1cc1.js",
     "static/js/2.33779fba.chunk.js",
     "static/css/main.bfed5036.chunk.css",
     "static/js/main.d911a962.chunk.js"
