@@ -12,7 +12,6 @@ function Sidebar(){
             <button className = "sbb2">STATS</button>
             <button className = "sbb3">UPDATE-SCHEDULE</button>
             <button className = "sbb4">UPDATE-INFO</button>
-            <p>made with love :)</p>
         </div>
     )
 }
