@@ -8,7 +8,7 @@ import Head from './head'
 function App() {
   return (
     <div className="App">
-      <Head/>
+      <Checksign/>
     </div>
   );
 }

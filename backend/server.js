@@ -60,6 +60,8 @@ app.post('/login',async(req,res)=>{
 })
 
 
+app.get("/")
+
 
 app.get("/verify/:email/:code",async(req,res)=>{
     if(req.params.code == authkey){
