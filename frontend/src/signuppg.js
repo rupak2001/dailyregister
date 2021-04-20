@@ -3,6 +3,7 @@ import React, {useState,useEffect} from 'react'
 import './css/loginpg.css'
 
 function Signup() {
+    var [ini,fin] = useState(null);
 
     var get_data = ()=>{
         var data = {
@@ -22,6 +23,7 @@ function Signup() {
         .then((res)=>{return res.json()})
         .then(async (data)=>{
             if(data.length === 0){
+                fin(null);
                 await fetch('http://localhost:8000/logup',{
                     method : 'POST',
                     body: JSON.stringify(get_data()),
@@ -30,7 +32,11 @@ function Signup() {
                 .then(console.log('sent data'))
             }
             else if(data.length === 1){
-                console.log('user already exists')
+                fin(()=>{
+                    return(
+                        <p className = "ex_user">you already have an account.Please log-in</p>
+                    )
+                })
             }
         })
     }
@@ -60,6 +66,7 @@ function Signup() {
                 </span>
                 <div className="div3">
                     <button className="but1" onClick = {()=>{signup_chk()}}>SIGN-UP</button>
+                    {ini}
                     <a className="a1" href="http://www.google.com">sign in with google</a>
                 </div>
             </div>
