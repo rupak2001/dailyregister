@@ -14,7 +14,6 @@ const sc = mongoose.Schema({
     "phone_no":{type:Number,maxlength:12,minlength:10,unique:[true,'this no. already exists']},
     "password":{type:String,unique:[true,"password already taken"]},
     "is_signedup" : {type:Boolean,default:false},
-    "unique_code":String
 })
 
 const reg_info = new mongoose.model("req_info",sc);

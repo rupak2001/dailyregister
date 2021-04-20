@@ -23,8 +23,8 @@ const send_email = (email,authkey)=>{
     var Transport = nodemailer.createTransport({
         service: "Gmail",
         auth:{
-            user:"#users mail",
-            pass:"#password"
+            user:"rupsrb2001@gmail.com",
+            pass:"rups1957"
         }
     });
 
@@ -49,7 +49,13 @@ const send_email = (email,authkey)=>{
 
 var authkey = '';
 
-app.post('/login',async(req,res)=>{
+app.get('/find_user/:email',async(req,res)=>{
+    var find = await model.find({email:req.params.email}).select({email:1,_id:0});
+    res.send(find);
+    console.log(find);
+})
+
+app.post('/logup',async(req,res)=>{
     ini_mod = new model(req.body);
     authkey = rand_num();
     console.log(authkey);
@@ -60,13 +66,12 @@ app.post('/login',async(req,res)=>{
 })
 
 
-app.get("/")
-
 
 app.get("/verify/:email/:code",async(req,res)=>{
     if(req.params.code == authkey){
         var run = await model.updateOne({email:req.params.email},{is_signedup:true})
-        res.redirect('/') //needed to change acc to frontend
+        //res.redirect('/') //needed to change acc to frontend
+        console.log(run);
     }
     else{
         res.send('user not found');
