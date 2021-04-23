@@ -14,23 +14,6 @@ function Login() {
 
   headers.append('GET', 'POST', 'OPTIONS');
 
-  /*
-    var [ini_msg,fin_msg] = useState(null);
-    var chk_login = async()=>{
-        var email = document.getElementById('email').value
-        var pass = document.getElementById('pass').value
-        await fetch('http://localhost:8000/log_user/'+email)
-        .then(res=>{return(res.json())})
-        .then(async(data)=>{
-            if(data.length >0 && pass !== data[0].password){
-                fin_msg(()=>{return(<p className = "loginp1">wrong password</p>)})
-            }
-            else if(data.length === 0){
-                fin_msg(()=>{return(<p className = 'loginp1'>no user found,please sign up</p>)})
-            }
-        })
-    }*/
-
 
     return (
         <div className="div0">
