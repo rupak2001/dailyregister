@@ -58,7 +58,6 @@ app.get('/find_user/:email',async(req,res)=>{
 app.post('/logup',async(req,res)=>{
     ini_mod = new model(req.body);
     authkey = rand_num();
-    console.log(authkey);
     send_email(req.body.email,authkey);
     var run = await model.insertMany([ini_mod]);
     console.log(run);
@@ -70,13 +69,21 @@ app.post('/logup',async(req,res)=>{
 app.get("/verify/:email/:code",async(req,res)=>{
     if(req.params.code == authkey){
         var run = await model.updateOne({email:req.params.email},{is_signedup:true})
-        //res.redirect('/') //needed to change acc to frontend
+        res.send("email varified :) please close this window and login")
         console.log(run);
     }
     else{
         res.send('user not found');
     }
 });
+
+
+
+
+app.get("/log_user/:email",async(req,res)=>{
+    var run = await model.find({email:req.params.email}).select({email:1,password:1,_id:0});
+    res.send(run);
+})
 
 
 app.listen(port,()=>{
