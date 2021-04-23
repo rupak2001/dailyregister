@@ -23,8 +23,8 @@ const send_email = (email,authkey)=>{
     var Transport = nodemailer.createTransport({
         service: "Gmail",
         auth:{
-            user:"rupsrb2001@gmail.com",
-            pass:"rups1957"
+            user:"#",
+            pass:"#"
         }
     });
 
