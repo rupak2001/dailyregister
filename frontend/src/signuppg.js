@@ -1,6 +1,8 @@
 
 import React, {useState} from 'react'
 import './css/loginpg.css'
+import $ from 'jquery'
+
 
 function Signup() {
     var [ini,fin] = useState(null);
@@ -18,18 +20,19 @@ function Signup() {
 
 
     var signup_chk = async()=>{
+        $('#sign_but').text('loading...')
         var email = document.getElementById('email_id').value;
-        await fetch('http://localhost:8000/find_user/'+email)
+        await fetch('https://daily-register-app.herokuapp.com/find_user/'+email)
         .then((res)=>{return res.json()})
         .then(async (data)=>{
             if(data.length === 0){
-                fin(null);
-                await fetch('http://localhost:8000/logup',{
+                await fetch('https://daily-register-app.herokuapp.com/logup',{
                     method : 'POST',
                     body: JSON.stringify(get_data()),
                     headers:{'Content-Type':'application/json'}
                 })
-                .then(console.log('sent data'))
+                .then(fin(<p className = "new_user">successfully signed up, please log in</p>))
+                $('#sign_but').text('SIGN-UP')
             }
             else if(data.length === 1){
                 fin(()=>{
@@ -37,6 +40,7 @@ function Signup() {
                         <p className = "ex_user">you already have an account.Please log-in</p>
                     )
                 })
+                $('#sign_but').text('SIGN-UP')
             }
         })
     }
@@ -65,7 +69,7 @@ function Signup() {
                     <input type="password" className="inp4" placeholder="enter Password" id = "pass"></input>
                 </span>
                 <div className="div3">
-                    <button className="but1" onClick = {()=>{signup_chk()}}>SIGN-UP</button>
+                    <button className="but1" id = "sign_but" onClick = {()=>{signup_chk()}}>SIGN-UP</button>
                     {ini}
                     <a className="a1" href="http://www.google.com">sign in with google</a>
                 </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import $ from 'jquery'
 import './css/head.css'
 import Sidebar from './sidebar'
+import RoutineTemp from './routine_temp'
 
 
 
@@ -28,9 +29,11 @@ function Head() {
             <div className='headd0'>
                 <input className="headinp0" type='image' src = "https://cdn.iconscout.com/icon/free/png-256/global-navigation-bar-1174857.png" alt = "drop-down menu icon"></input>
                 <p className="headp0">Register</p>
-                <button className="headb0">Contact us</button>
+                <button className="headb0">SIGN-OUT</button>
             </div>
             <Sidebar />
+            <RoutineTemp/>
+
         </div>
     )
 }

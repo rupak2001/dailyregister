@@ -23,8 +23,8 @@ const send_email = (email,authkey)=>{
     var Transport = nodemailer.createTransport({
         service: "Gmail",
         auth:{
-            user:"#",
-            pass:"#"
+            user:"rupsrb2001@gmail.com",
+            pass:"rups1957"
         }
     });
 
@@ -52,7 +52,6 @@ var authkey = '';
 app.get('/find_user/:email',async(req,res)=>{
     var find = await model.find({email:req.params.email}).select({email:1,_id:0});
     res.send(find);
-    console.log(find);
 })
 
 app.post('/logup',async(req,res)=>{

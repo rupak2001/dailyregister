@@ -4,17 +4,6 @@ import './css/loginpg.css'
 
 
 function Login() {
-    let headers = new Headers();
-
-  headers.append('Content-Type', 'application/json');
-  headers.append('Accept', 'application/json');
-
-  headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
-  headers.append('Access-Control-Allow-Credentials', 'true');
-
-  headers.append('GET', 'POST', 'OPTIONS');
-
-
     return (
         <div className="div0">
             <div className="div2">
@@ -27,7 +16,7 @@ function Login() {
                     <input type="password" className="inp4" placeholder="enter Password" id = "pass"></input>
                 </span>
                 <div className="div3">
-                    <button className="but1" /*onClick = {()=>{chk_login()}}*/ id = 'loginbut'>LOGIN</button>
+                    <button className="but1" id = 'loginbut'>LOGIN</button>
                     <p id = 'loginp1'></p>
                     <a className="a1" href="http://www.google.com">sign in with google</a>
                 </div>
