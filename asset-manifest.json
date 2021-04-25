@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/dailyregister/static/css/main.e1c300a3.chunk.css",
-    "main.js": "/dailyregister/static/js/main.48e8f971.chunk.js",
-    "main.js.map": "/dailyregister/static/js/main.48e8f971.chunk.js.map",
+    "main.css": "/dailyregister/static/css/main.83f5b995.chunk.css",
+    "main.js": "/dailyregister/static/js/main.fd5bac0e.chunk.js",
+    "main.js.map": "/dailyregister/static/js/main.fd5bac0e.chunk.js.map",
     "runtime-main.js": "/dailyregister/static/js/runtime-main.d98a04cb.js",
     "runtime-main.js.map": "/dailyregister/static/js/runtime-main.d98a04cb.js.map",
-    "static/js/2.6ab42a09.chunk.js": "/dailyregister/static/js/2.6ab42a09.chunk.js",
-    "static/js/2.6ab42a09.chunk.js.map": "/dailyregister/static/js/2.6ab42a09.chunk.js.map",
+    "static/js/2.ea0f16cf.chunk.js": "/dailyregister/static/js/2.ea0f16cf.chunk.js",
+    "static/js/2.ea0f16cf.chunk.js.map": "/dailyregister/static/js/2.ea0f16cf.chunk.js.map",
     "index.html": "/dailyregister/index.html",
-    "static/css/main.e1c300a3.chunk.css.map": "/dailyregister/static/css/main.e1c300a3.chunk.css.map",
-    "static/js/2.6ab42a09.chunk.js.LICENSE.txt": "/dailyregister/static/js/2.6ab42a09.chunk.js.LICENSE.txt"
+    "static/css/main.83f5b995.chunk.css.map": "/dailyregister/static/css/main.83f5b995.chunk.css.map",
+    "static/js/2.ea0f16cf.chunk.js.LICENSE.txt": "/dailyregister/static/js/2.ea0f16cf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d98a04cb.js",
-    "static/js/2.6ab42a09.chunk.js",
-    "static/css/main.e1c300a3.chunk.css",
-    "static/js/main.48e8f971.chunk.js"
+    "static/js/2.ea0f16cf.chunk.js",
+    "static/css/main.83f5b995.chunk.css",
+    "static/js/main.fd5bac0e.chunk.js"
   ]
 }
