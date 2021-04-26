@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dailyregister/static/css/main.83f5b995.chunk.css",
-    "main.js": "/dailyregister/static/js/main.fd5bac0e.chunk.js",
-    "main.js.map": "/dailyregister/static/js/main.fd5bac0e.chunk.js.map",
+    "main.js": "/dailyregister/static/js/main.fabe13d2.chunk.js",
+    "main.js.map": "/dailyregister/static/js/main.fabe13d2.chunk.js.map",
     "runtime-main.js": "/dailyregister/static/js/runtime-main.d98a04cb.js",
     "runtime-main.js.map": "/dailyregister/static/js/runtime-main.d98a04cb.js.map",
     "static/js/2.ea0f16cf.chunk.js": "/dailyregister/static/js/2.ea0f16cf.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.d98a04cb.js",
     "static/js/2.ea0f16cf.chunk.js",
     "static/css/main.83f5b995.chunk.css",
-    "static/js/main.fd5bac0e.chunk.js"
+    "static/js/main.fabe13d2.chunk.js"
   ]
 }
