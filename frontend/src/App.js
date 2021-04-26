@@ -12,7 +12,7 @@ function App() {
              $('#loginbut').text('loading...')
             var email = document.getElementById('email').value
             var pass = document.getElementById('pass').value
-            await fetch('https://daily-register-app.herokuapp.com/log_user/'+ email)
+            await fetch('/log_user/'+ email)
             .then(res => { return (res.json()) })
             .then((data) => {
                 if (data.length > 0 && pass === data[0].password) {

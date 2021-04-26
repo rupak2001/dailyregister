@@ -14,7 +14,6 @@ function Signup() {
             phone_no:document.getElementById('ph_no').value,
             password:document.getElementById('pass').value,
         }
-        console.log(data.phone_no)
         return data
     }
 
@@ -22,11 +21,11 @@ function Signup() {
     var signup_chk = async()=>{
         $('#sign_but').text('loading...')
         var email = document.getElementById('email_id').value;
-        await fetch('https://daily-register-app.herokuapp.com/find_user/'+email)
+        await fetch('/find_user/'+email)
         .then((res)=>{return res.json()})
         .then(async (data)=>{
             if(data.length === 0){
-                await fetch('https://daily-register-app.herokuapp.com/logup',{
+                await fetch('/logup/',{
                     method : 'POST',
                     body: JSON.stringify(get_data()),
                     headers:{'Content-Type':'application/json'}
