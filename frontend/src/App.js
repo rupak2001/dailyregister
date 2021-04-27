@@ -12,7 +12,10 @@ function App() {
              $('#loginbut').text('loading...')
             var email = document.getElementById('email').value
             var pass = document.getElementById('pass').value
-            await fetch('/log_user/'+ email)
+            await fetch('/log_user/'+ email,{headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+               }})
             .then(res => { return (res.json()) })
             .then((data) => {
                 if (data.length > 0 && pass === data[0].password) {
@@ -31,6 +34,9 @@ function App() {
                     $('#loginp1').text('no user found. please sign-up')
                 }
             })
+        })
+        $("#sign_out_but").click(()=>{
+            content(<Checksign/>)
         })
     })
     return (

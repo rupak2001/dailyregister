@@ -22,10 +22,10 @@
 
 .headp0{
     font-size: 30px;
-    font-weight: 700;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    text-decoration:underline solid ;
+    font-weight: 800;
+    font-family:fantasy;
     margin-right: 30%;
+    color: darkred;
 }
 
 .headb0{
@@ -45,7 +45,7 @@
     height:60px;
     width: 200px;
     font-size: large;
-    background: linear-gradient(to right bottom,yellow,lightgreen,pink);
+    background: linear-gradient(to right bottom,rgba(255, 255, 0,0.4),rgba(142, 236, 142,0.4),rgba(255, 192, 203,0.4));
     font-weight: 1000;
 }
 
@@ -83,4 +83,11 @@
 .sbh1{
     text-decoration: underline;
     margin-bottom: 20%;
+}
+
+.main_div0{
+    height: 100vh;
+    width: 100vw;
+    background: url('https://i2.wp.com/i.pinimg.com/originals/e0/81/b6/e081b61f54b8d7ee43cb7fabce4c7b8b.png');
+    background-size: contain;
 }

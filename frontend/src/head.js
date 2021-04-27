@@ -24,12 +24,12 @@ function Head() {
         })
     })
     return (
-        <div>
+        <div className = 'main_div0'>
 
             <div className='headd0'>
                 <input className="headinp0" type='image' src = "https://cdn.iconscout.com/icon/free/png-256/global-navigation-bar-1174857.png" alt = "drop-down menu icon"></input>
                 <p className="headp0">Register</p>
-                <button className="headb0">SIGN-OUT</button>
+                <button className="headb0" id = "sign_out_but">SIGN-OUT</button>
             </div>
             <Sidebar />
             <RoutineTemp/>

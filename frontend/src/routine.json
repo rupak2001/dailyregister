@@ -4,6 +4,13 @@
             "class_name": "English-lab",
             "class_code": "HU-291",
             "S_Time": 10,
+            "E_Time": 11,
+            "Status": "yet to start"
+        },
+        {
+            "class_name": "English-lab",
+            "class_code": "HU-291",
+            "S_Time": 11,
             "E_Time": 12,
             "Status": "yet to start"
         },
@@ -11,65 +18,79 @@
             "class_name": "Mechanics",
             "class_code": "ME-201",
             "S_Time": 12,
-            "E_Time": 1,
+            "E_Time": 13,
             "Status": "yet to start"
         },
         {
             "class_name": "Maths",
             "class_code": "M-201",
-            "S_Time": 1,
-            "E_Time": 2,
+            "S_Time": 13,
+            "E_Time": 14,
             "Status": "yet to start"
         },
         {
             "class_name": "Chemistry",
             "class_code": "CH-201",
-            "S_Time": 3,
-            "E_Time": 4,
+            "S_Time": 15,
+            "E_Time": 16,
             "Status": "yet to start"
         },
         {
             "class_name": "Mechanical Lab/Chemistry Lab",
             "class_code": "ME-291/CH-291",
-            "S_Time": 4,
-            "E_Time": 6,
+            "S_Time": 16,
+            "E_Time": 17,
+            "Status": "yet to start"
+        },
+        {
+            "class_name": "Mechanical Lab/Chemistry Lab",
+            "class_code": "ME-291/CH-291",
+            "S_Time": 17,
+            "E_Time": 18,
             "Status": "yet to start"
         }
     ],
     [
         {
-            "class_name": {"b":"Mechanical Lab","a":"Chemistry Lab"},
-            "class_code": {"b":"ME-291","a":"CH-291"},
+            "class_name": "Mechanical Lab/Chemistry Lab",
+            "class_code": "ME-291/CH-291",
             "S_Time": 11,
-            "E_Time": 1,
+            "E_Time": 12,
+            "Status": "yet to start"
+        },
+        {
+            "class_name": "Mechanical Lab/Chemistry Lab",
+            "class_code": "ME-291/CH-291",
+            "S_Time": 12,
+            "E_Time": 13,
             "Status": "yet to start"
         },
         {
             "class_name": "Mechanics",
             "class_code": "ME-201",
-            "S_Time": 1,
-            "E_Time": 2,
+            "S_Time": 13,
+            "E_Time": 14,
             "Status": "yet to start"
         },
         {
             "class_name": "Electrical",
             "class_code": "EE-201",
-            "S_Time": 3,
-            "E_Time": 4,
+            "S_Time": 15,
+            "E_Time": 16,
             "Status": "yet to start"
         },
         {
             "class_name": "Maths",
             "class_code": "M-201",
-            "S_Time": 4,
-            "E_Time": 5,
+            "S_Time": 16,
+            "E_Time": 17,
             "Status": "yet to start"
         },
         {
             "class_name": "Computer",
             "class_code": "CS-201",
-            "S_Time": 5,
-            "E_Time": 6,
+            "S_Time": 17,
+            "E_Time": 18,
             "Status": "yet to start"
         }
     ],
@@ -85,28 +106,28 @@
             "class_name": "Mechanics",
             "class_code": "ME-201",
             "S_Time": 12,
-            "E_Time":1,
+            "E_Time":13,
             "Status": "yet to start"
         },
         {
             "class_name": "Computer",
             "class_code": "CS-201",
-            "S_Time": 1,
-            "E_Time": 2,
+            "S_Time": 13,
+            "E_Time": 14,
             "Status": "yet to start"
         },
         {
             "class_name": "Chemistry",
             "class_code": "CH-201",
-            "S_Time": 3,
-            "E_Time": 4,
+            "S_Time": 15,
+            "E_Time": 16,
             "Status": "yet to start"
         },
         {
             "class_name": "Maths",
             "class_code": "M-201",
-            "S_Time": 6,
-            "E_Time": 7,
+            "S_Time": 18,
+            "E_Time": 19,
             "Status": "yet to start"
         }
     ],
@@ -122,28 +143,35 @@
             "class_name": "Chemistry",
             "class_code": "CH-201",
             "S_Time": 12,
-            "E_Time": 1,
+            "E_Time": 13,
             "Status": "yet to start"
         },
         {
             "class_name": "Electrical",
             "class_code": "EE-201",
-            "S_Time": 1,
-            "E_Time": 2,
+            "S_Time": 13,
+            "E_Time": 14,
             "Status": "yet to start"
         },
         {
             "class_name": "Computer",
             "class_code": "CS-201",
-            "S_Time": 3,
-            "E_Time": 4,
+            "S_Time": 15,
+            "E_Time": 16,
             "Status": "yet to start"
         },
         {
-            "class_name": {"a":"Computer","b":"Electrical"},
-            "class_code": {"a":"CS-291","b":"EE-291"},
-            "S_Time": 4,
-            "E_Time": 6,
+            "class_name": "Computer-lab/Electrical-lab",
+            "class_code": "CS-291/EE-291",
+            "S_Time": 16,
+            "E_Time": 17,
+            "Status": "yet to start"
+        },
+        {
+            "class_name": "Computer-lab/Electrical-lab",
+            "class_code": "CS-291/EE-291",
+            "S_Time": 17,
+            "E_Time": 18,
             "Status": "yet to start"
         }
     ],
@@ -159,28 +187,35 @@
             "class_name": "Maths",
             "class_code": "M-201",
             "S_Time": 12,
-            "E_Time": 1,
+            "E_Time": 13,
             "Status": "yet to start"
         },
         {
             "class_name": "Chemistry",
             "class_code": "CH-201",
-            "S_Time": 1,
-            "E_Time": 2,
+            "S_Time": 13,
+            "E_Time": 14,
             "Status": "yet to start"
         },
         {
             "class_name": "Electrical",
             "class_code": "EE-201",
-            "S_Time": 3,
-            "E_Time": 4,
+            "S_Time": 15,
+            "E_Time": 16,
             "Status": "yet to start"
         },
         {
-            "class_name":{"b":"Computer","a":"Electrical"},
-            "class_code": {"b":"CS-291","a":"EE-291"},
-            "S_Time": 4,
-            "E_Time": 6,
+            "class_name":"Computer-lab/Electrical-lab",
+            "class_code": "CS-291/EE-291",
+            "S_Time": 16,
+            "E_Time": 17,
+            "Status": "yet to start"
+        },
+        {
+            "class_name":"Computer-lab/Electrical-lab",
+            "class_code": "CS-291/EE-291",
+            "S_Time": 17,
+            "E_Time": 18,
             "Status": "yet to start"
         }
     ]
