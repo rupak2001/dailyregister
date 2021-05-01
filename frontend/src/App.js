@@ -12,7 +12,7 @@ function App() {
              $('#loginbut').text('loading...')
             var email = document.getElementById('email').value
             var pass = document.getElementById('pass').value
-            await fetch('/log_user/'+ email,{headers : { 
+            await fetch('http://localhost:8000/log_user/'+ email,{headers : { 
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
                }})

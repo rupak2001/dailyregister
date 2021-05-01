@@ -5,7 +5,6 @@
     align-items: center;
     margin-top: 20px;
 }
-
 .tr1>th{
     height: 5vh;
     width: 15vw;
@@ -13,9 +12,14 @@
     border: black 2px solid;
     text-align: center;
     border-radius: 5px 5px 5px 5px;
+    background-color: antiquewhite;
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+    margin-left: 0%;
+    color: brown;
 }
-
-.tr2>td{
+.tr1>td{
     height: 5vh;
     width: 15vw;
     border-spacing: 10%;
@@ -24,23 +28,34 @@
     border-radius: 5px 5px 5px 5px;
 }
 
-.sel0{
-    width: 15vw;
-    height: 5vh;
-    text-align: center;
-    font-size: large;
-    border-radius: 5px 5px 5px 5px;
-}
+
 .day_finder{
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 700;
     text-decoration: underline;
 }
 
-#rout_table{
-    background-color: antiquewhite;
-    font-size: larger;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: underline;
+
+#ref_but{
+    margin-left: 82.25vw;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgreen;
 }
 
+@media screen and (max-width:640px) {
+    .tr1>th{
+        height:6vh;
+        width: 15vw;
+        color: brown;
+        font-size: 16.5px;
+    }  
+    #ref_but{
+        margin-left: 67vw;
+    }
+}
+
+#active_routine:hover{
+    background-color: blue;
+}

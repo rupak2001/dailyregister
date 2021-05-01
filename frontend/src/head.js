@@ -22,6 +22,7 @@ function Head() {
                 chk = true;
             }
         })
+        
     })
     return (
         <div className = 'main_div0'>

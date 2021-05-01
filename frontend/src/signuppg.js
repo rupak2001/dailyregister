@@ -21,14 +21,14 @@ function Signup() {
     var signup_chk = async()=>{
         $('#sign_but').text('loading...')
         var email = document.getElementById('email_id').value;
-        await fetch('/find_user/'+email,{headers : { 
+        await fetch('http://localhost:8000/find_user/'+email,{headers : { 
             'Content-Type': 'application/json',
             'Accept': 'application/json'
            }})
         .then((res)=>{return res.json()})
         .then(async (data)=>{
             if(data.length === 0){
-                await fetch('/logup/',{
+                await fetch('http://localhost:8000/logup/',{
                     method : 'POST',
                     body: JSON.stringify(get_data()),
                     headers:{'Content-Type':'application/json','Accept': 'application/json'}
