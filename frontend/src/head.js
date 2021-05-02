@@ -2,7 +2,8 @@ import React from 'react'
 import $ from 'jquery'
 import './css/head.css'
 import Sidebar from './sidebar'
-import RoutineTemp from './routine_temp'
+import Routinelive from './routine_live'
+//import RoutineTemp from './routine_temp'
 
 
 
@@ -33,7 +34,7 @@ function Head() {
                 <button className="headb0" id = "sign_out_but">SIGN-OUT</button>
             </div>
             <Sidebar />
-            <RoutineTemp/>
+            <Routinelive/>
 
         </div>
     )

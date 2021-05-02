@@ -107,7 +107,6 @@ app.get("/change_attendence/:date/:sub_name/:prevatt",async(req,res)=>{
     var date = req.params.date;
     var prev_att = req.params.prevatt
     var run = await model.updateOne({email:user},{[name]:{"date":date,"attended":prev_att+1}})
-    console.log(run)
 })
 
 
