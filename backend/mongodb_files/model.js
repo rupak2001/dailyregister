@@ -20,11 +20,11 @@ const sc = mongoose.Schema({
     "mechanics": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
     "computer": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
     "electrical": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
-    "chemistry-lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
-    "computer-lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
-    "electrical-lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
-    "mechanical-lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
-    "english-lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
+    "chemistry_lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
+    "computer_lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
+    "electrical_lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
+    "mechanical_lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
+    "english_lab": { "date": { type: Number, default: 0 }, "attended": { type: Number, default: 0 } },
 })
 
 const reg_info = new mongoose.model("req_info", sc);

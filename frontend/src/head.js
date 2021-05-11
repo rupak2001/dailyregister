@@ -1,13 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import $ from 'jquery'
 import './css/head.css'
 import Sidebar from './sidebar'
 import Routinelive from './routine_live'
+import Statreport from './stats'
 //import RoutineTemp from './routine_temp'
 
 
 
 function Head() {
+    var[sb_ini,sb_cont] = useState(<Routinelive/>)
     var chk = true;
     $(() => {
         $('#sb').hide();
@@ -23,6 +25,13 @@ function Head() {
                 chk = true;
             }
         })
+
+        $('#att_stats').on('click',()=>{
+            sb_cont(<Statreport/>)
+        })
+        $('#att_sch').on("click",()=>{
+            sb_cont(<Routinelive/>)
+        })
         
     })
     return (
@@ -34,8 +43,7 @@ function Head() {
                 <button className="headb0" id = "sign_out_but">SIGN-OUT</button>
             </div>
             <Sidebar />
-            <Routinelive/>
-
+            {sb_ini}
         </div>
     )
 }

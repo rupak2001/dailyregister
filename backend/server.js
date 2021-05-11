@@ -109,6 +109,11 @@ app.get("/change_attendence/:date/:sub_name/:prevatt",async(req,res)=>{
     var run = await model.updateOne({email:user},{[name]:{"date":date,"attended":prev_att+1}})
 })
 
+app.get("/get_stats",async(req,res)=>{
+    var run = await model.find({email:user}).select({"maths":1,"chemistry":1,"mechanics":1,"electrical":1,"computer":1,"chemistry_lab":1,"mechanical_lab":1,"electrical_lab":1,"computer_lab":1,"english_lab":1,"_id":0})
+    res.send(run)
+})
+
 
 app.listen(port,()=>{
     console.log('server connected at port',port);

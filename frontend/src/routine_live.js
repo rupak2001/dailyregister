@@ -50,11 +50,10 @@ class Routinelive extends React.Component{
     }
 
     componentDidMount(){
-        console.log('working')
         var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
         this.setState({days:days[this.ext_date()]})
-        if (this.ext_date() === 0 && this.ext_date() !== 6) {
-            var table_rows = routine[this.ext_date()].map((data) => {
+        if (this.ext_date() !== 0 && this.ext_date() !== 6) {
+            var table_rows = routine[this.ext_date()-1].map((data) => {
                 if (this.ext_time() === data.S_Time) {
                     curr_class = data.class_name.toLowerCase()
                     return (
